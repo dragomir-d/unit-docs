@@ -1,17 +1,51 @@
 # Welcome to MkDocs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Съдържание на плъгини
 
-## Commands
+### hotlink to repository
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+```yml
+repo_name: Github
+repo_url: https://github.com/dragomir-d/unit-docs/
+edit_uri: 'docs/'
+```
 
-## Project layout
+### page revision date
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Показва последната дата на редакция на страницата. За да сработи трябва да има настроен [hotlink to repository](#hotlink-to-repository) в `mkdocs.yml`.
+
+Инсталация:
+
+```
+pip install mkdocs-git-revision-date-plugin
+```
+
+Добавяме git-revision-date в `mkdocs.yml`:
+
+```yml
+plugins:
+    - search
+    - git-revision-date
+```
+
+Добавката `search` е активирана по подразбиране, но в съчетание с git-revision-date ако тя не бъде подадена ще бъде деактивирана.
+
+### PDF export
+
+Супер удобен бутон за PDF export директно на машината. Трябва инсталация на [Weasyprint](https://doc.courtbouillon.org/weasyprint/latest/first_steps.html#windows), това е инструмент, който преобразува html в PDF файлове.
+
+Като инсталираме weasyprint, следва да инсталираме плъгина в mkdocs:
+
+```
+pip install mkdocs-pdf-export-plugin
+```
+
+Добавяме в `mkdocs.yml`:
+
+```
+plugins:
+    - pdf-export:
+        combined: true
+```
+
+`combined: true` ще гарантира, че целият сайт ще бъде експортнат в един pdf файл.

@@ -4,8 +4,8 @@ nav:
     - Home: index.md
     - Guides:
         - guides/getting-started.md    
-    - setup.md
-    - about.md
+    - Setup: setup.md
+    - About: about.md
   
 theme:
   name: material
@@ -20,10 +20,12 @@ markdown_extensions:
   - toc:                 
       permalink: true
 
-# repo_name: Github
-# repo_url: https://github.com/martinlingstuyl/blimped-mkdocs/
-# edit_uri: 'docs/'
+repo_name: Github
+repo_url: https://github.com/dragomir-d/unit-docs/
+edit_uri: 'docs/'
 
-# plugins:
-#     - search
-#     - git-revision-date
+plugins:
+    - search
+    - git-revision-date
+    - search
+    - pdf-export
