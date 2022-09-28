@@ -1,4 +1,4 @@
-Copy paste text from howtodocs/git.
+<!-- Copy paste text from howtodocs/git.
 
 ## Работа с git - step by step
 
@@ -113,6 +113,6 @@ Git показва, че има промени във файла README.md
 
 
 
-
+ -->
 
 

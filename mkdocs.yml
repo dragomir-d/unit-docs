@@ -22,7 +22,7 @@ markdown_extensions:
 
 repo_name: Github
 repo_url: https://github.com/dragomir-d/unit-docs/
-edit_uri: 'docs/'
+edit_uri: 'tree/main/docs'
 
 plugins:
     - search
