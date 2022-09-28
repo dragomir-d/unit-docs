@@ -12,7 +12,9 @@ edit_uri: 'docs/'
 
 ### page revision date
 
-Показва последната дата на редакция на страницата. За да сработи трябва да има настроен [hotlink to repository](#hotlink-to-repository) в `mkdocs.yml`.
+Показва последната дата на редакция на страницата, визуализира се най-отдолу на всяка страница.
+
+За да сработи трябва да има настроен [hotlink to repository](#hotlink-to-repository) в `mkdocs.yml`.
 
 Инсталация:
 
