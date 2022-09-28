@@ -1,0 +1,29 @@
+site_name: My Docs
+
+nav:
+    - Home: index.md
+    - Guides:
+        - guides/getting-started.md    
+    - setup.md
+    - about.md
+  
+theme:
+  name: material
+  language: bg
+  icon:
+    logo: material/home
+  features:
+    - navigation.top
+    - navigation.expand
+
+markdown_extensions:  
+  - toc:                 
+      permalink: true
+
+# repo_name: Github
+# repo_url: https://github.com/martinlingstuyl/blimped-mkdocs/
+# edit_uri: 'docs/'
+
+# plugins:
+#     - search
+#     - git-revision-date
