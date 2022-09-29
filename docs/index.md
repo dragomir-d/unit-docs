@@ -51,3 +51,7 @@ plugins:
 ```
 
 `combined: true` ще гарантира, че целият сайт ще бъде експортнат в един pdf файл.
+
+## Image or diagram
+
+![image](test.png)
