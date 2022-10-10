@@ -1,5 +1,9 @@
 # Welcome to MkDocs
 
+<!-- !!! gray "Преди да продължите:"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. -->
+
 ## Съдържание на плъгини
 
 ### hotlink to repository

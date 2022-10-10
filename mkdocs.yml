@@ -15,10 +15,16 @@ theme:
   features:
     - navigation.top
     - navigation.expand
+  # font:
+  #   text: Roboto
+  #   code: Roboto Mono
 
-markdown_extensions:  
+markdown_extensions:
   - toc:                 
       permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 repo_name: Github
 repo_url: https://github.com/dragomir-d/unit-docs/
@@ -29,3 +35,6 @@ plugins:
     - git-revision-date
     - search
     - pdf-export
+
+# extra_css:
+#   - stylesheets/extra.css
